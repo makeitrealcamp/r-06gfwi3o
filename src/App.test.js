@@ -1,8 +1,13 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
+import { shallow } from 'enzyme';
 import App from './App';
+import Welcome from './Welcome';
 
-it('renders without crashing', () => {
-  const div = document.createElement('div');
-  ReactDOM.render(<App />, div);
+it('renders App without crashing', () => {
+  shallow(<App />);
+});
+
+it('renders three Welcome components', () => {
+  const wrapper = shallow(<App />);
+  expect(wrapper.find(Welcome).length).toBe(3);
 });
