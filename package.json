@@ -2,19 +2,20 @@
   "name": "component",
   "version": "0.1.0",
   "private": true,
-  "devDependencies": {
-    "enzyme": "^2.6.0",
-    "react-addons-test-utils": "^15.4.1",
-    "react-scripts": "0.7.0"
-  },
   "dependencies": {
-    "react": "^15.4.1",
-    "react-dom": "^15.4.1"
+    "react": "^16.0.0",
+    "react-dom": "^16.0.0",
+    "react-scripts": "1.0.14",
+    "react-test-renderer": "^16.0.0"
   },
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject"
+  },
+  "devDependencies": {
+    "enzyme": "^3.1.0",
+    "enzyme-adapter-react-16": "^1.0.1"
   }
 }
